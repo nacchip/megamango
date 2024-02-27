@@ -2,13 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>megamango</title>
+    <title>how to join MegaMango</title>
     <style>
 body {
   width: 300px;
   margin: 0 auto;
-  font-size: 1.2rem;
-  font-family: sans-serif;
+  font: italic small-caps bold 23px/2 cursive;
+  background-color: #FFF8F1;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
 }
 
 p {
@@ -19,29 +25,10 @@ a {
   outline: none;
   text-decoration: none;
   padding: 2px 1px 0;
+  color: #D69C30;
 }
-
-a:link {
-  color: #534D01; //#265301
-}
-
-a:visited {
-  color: #7A7A16; //#437a16
-}
-
-a:focus {
-  border-bottom: 1px solid;
-  background: #DFE498; //#bae498
-}
-
 a:hover {
-  border-bottom: 1px solid;
-  background: #FBFEAA; //#cdfeaa
-}
-
-a:active {
-  background: #265301;
-  color: #FBFEAA;
+  border-bottom: 1px dashed;
 }
 #ip {
     color: #D69C30;
@@ -52,17 +39,17 @@ a:active {
 <body>
 <center>
 <h1>hi!</h1>
-<h3>to join our server, use this ip: <i id="ip" onclick="copyContent()" a>megamango.aternos.me</i>!</h3>
+<h3>to join our server, use this ip: <i id="ip" onclick="copyContent()">megamango.aternos.me *click to copy IP*</i>!</h3>
     <br>
 <h4><a href='https://discord.gg/5ehxsekNCR'>also join our discord server! <i>*click me*</i></a></h4>
     <br>
-<h5>if you are havin' troubles, contact me at discord: <a href="https://discordapp.com/users/nacchip"><i>@nacchip</i></a></h5>
+<h5>if you are havin' troubles, contact me at discord: <a href="https://discordapp.com/users/nacchip"><i>@nacchip *click*</i></a></h5>
 </center>
 <script>
 const copyContent = async () => {
   try {
     await navigator.clipboard.writeText('megamango.aternos.me');
-    alert('Content copied to clipboard');
+    alert('IP copied to clipboard.');
   } catch (err) {
     alert('Failed to copy: ', err);
   }
